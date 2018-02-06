@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.alexessaytool" version="1.36.9" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Alex</name>
+    <name>Your App Name</name>
     <description>
-       Alex is an essay writing tool with ten easy steps that’ll get you from blank page to the final draft.
+       Your App Description.
     </description>
     <author email="yourEmailAddress" href="https://www.google.com">
-        Royal Literary Fund
+        Your Name
     </author>
     <content src="index.html" />
 
@@ -23,11 +23,15 @@
 	  <!--use cordova-plugin-network-information-->
 	  <plugin name="cordova-plugin-network-information" source="npm" />
 
+	<!--Example white listed servers-->
     <access origin="https://player.vimeo.com/external/*" />
     <access origin="https://*://fonts.google.apis.com/*" />
     <access origin="https://*://d1ajyp3swh7ygp.cloudfront.net/*" />
     <access origin="https://*://alexessaytool.com/*" />
 
+	<!--whitelist all external sources-->
+	<!--remove from production versions-->
+<access origin="*" />
 
     <allow-navigation href="*://fonts.google.apis.com/*" />
     <allow-navigation href="*://d1ajyp3swh7ygp.cloudfront.net/*" />
@@ -43,7 +47,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
 
-
+<!--Example icons-->
 <!--<platform name="android">
       
         <allow-intent href="market:*" />
@@ -70,12 +74,12 @@
 
 
 
-
+<!--Check latest cli version--> 
     <preference name='phonegap-version' value='cli-7.0.1' />
 
-    <!--delay splash screen for 6 seconds on initial load-->
+    <!--delay splash screen for 6 seconds on initial load
     <preference name="SplashScreenBackgroundColor" value="#3a5169" />
     <preference name="SplashScreenDelay" value="5000" />
-    <preference name="FadeSplashScreenDuration" value="1500"/>
+    <preference name="FadeSplashScreenDuration" value="1500"/>-->
 
 </widget>
